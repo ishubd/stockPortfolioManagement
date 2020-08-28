@@ -1,0 +1,54 @@
+html {
+    font-family: 'helvetica neue';
+    overflow-x: hidden;
+}
+
+.addingData {
+    margin: 40px 30px 40px 30px;
+}
+
+.addingData input {
+    box-shadow: outset 0 -3px 0 0 #d49a89;
+}
+
+body {
+    background-color: #f6f5f5;
+}
+
+input {
+    outline: none;
+    border: none;
+    box-shadow: inset 0 -3px 0 0 #d49a89;
+}
+
+button {
+    border-width: 0;
+    background-color: #d49a89;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    box-shadow: none;
+}
+
+.addButton {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #d49a89;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+    margin-top: -10px;
+    outline: none !important;
+}
+
+.tableHeader {
+    color: #d49a89;
+}
+
+.tableHeader {
+    margin-left: -50px;
+}

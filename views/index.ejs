@@ -1,0 +1,94 @@
+    <%- include("partials/header"); -%>
+
+    <!-- For company -->
+    <div class="container-fluid addingData">
+        <form class="" action="/" method="POST">
+            <div class="row">
+
+                <div class="col">
+                    <label for="company">Company</label>
+                    <input type="text" name="newCompanies">
+                </div>
+
+                <div class="col">
+                    <label for="stock">Stock</label>
+                    <input type="number" name="newStocks">
+                </div>
+
+                <div class="col">
+                    <label for="boughtPrice">Bought Price</label>
+                    <input type="number" name="newBoughtPrices">
+                </div>
+
+                <div class="col">
+                    <button class="addButton" type="submit" name="button">+</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row tableHeader">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                Comapny
+            </div>
+            <div class="col">
+                Stock
+            </div>
+            <div class="col">
+                Buy Price
+            </div>
+            <div class=" col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <hr>
+        <% for (var i = 0; i<newCompanies.length; i++) { %>
+        <div class="row">
+            <div class="col">
+                <input type="checkbox">
+            </div>
+            <div class="col">
+                <h6><%= newCompanies[i].companyName %></h6>
+            </div>
+            <div class="col">
+                <%= newStocks[i].stock %>
+            </div>
+            <div class="col">
+                <div class="boughtPrice">
+                    Rs. <%= newBoughtPrices[i].boughtPrice %>
+                </div>
+            </div>
+            <div class="col">
+                <label for="soldStock">Sold stock</label><input type="text" name="soldStocks" class="soldStocks">
+            </div>
+            <div class="col">
+                <label for="sellPrice">Sell Price</label><input type="text" name="sellPrice" class="sellPrice">
+            </div>
+            <div class="col">
+                <label for="caculation">Calculation</label>
+                <input type="text" class="calculation" name="calculation" placeholder="Calculation" disabled />
+            </div>
+            <!-- <div class="col">
+                <button type="submit">Calculate</button>
+            </div> -->
+        </div>
+        <hr>
+        <% } %>
+    </div>
+
+    <form action="/" , method="POST">
+        <label for=""></label></form>
+
+    <%- include("partials/footer"); -%>
